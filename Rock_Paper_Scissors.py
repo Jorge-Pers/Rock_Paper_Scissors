@@ -33,13 +33,14 @@ keep_playing ="-"
 def play_again(keep_playing):
 
     while keep_playing != 'n':
-        keep_playing = input(" Do you want to try again?   Yes = y , No = n "'\n')
-        if keep_playing == 'y':
+        keep_playing = input(" Do you want to try again?   Yes = Y , No = N "'\n')
+        if keep_playing == 'y' or keep_playing =='Y':
 # applying the first function in order to repeat the process.
            compare(name_1,name_2)
 # game is over
-        elif keep_playing =='n':
-               print(f"thanks for your time {name_1} and {name_2}.") 
+        elif keep_playing == 'n' or keep_playing =='N':
+               print(f"thanks for your time {name_1} and {name_2}.")
+            break
 
 play_again(keep_playing)   
   
