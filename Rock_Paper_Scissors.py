@@ -40,7 +40,7 @@ def play_again(keep_playing):
 # game is over
         elif keep_playing == 'n' or keep_playing =='N':
                print(f"thanks for your time {name_1} and {name_2}.")
-            break
+               break
 
 play_again(keep_playing)   
   
